@@ -16,7 +16,7 @@ module.exports = function replace (options = {}) {
   return {
     name: 'replace',
 
-    transformBundle (code) {
+    renderChunk (code) {
       const magicString = new MagicString(code)
       let hasReplacements = false
       let match
